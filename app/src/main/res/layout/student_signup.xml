@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".student.Student_signup"
+    android:orientation="vertical"
+    android:background="@drawable/stock"
+    >
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_student_signup"
+        android:visibility="gone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_name"
+        android:hint="@string/name"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_email"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:inputType="textWebEmailAddress"
+        android:hint="@string/email" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_phone"
+        android:inputType="phone"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:hint="@string/phone" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_password"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:inputType="textPassword"
+        android:hint="@string/pass" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_confirmPassword"
+        android:inputType="textPassword"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:hint="@string/confirmPass" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/student_register"
+        android:text="@string/register"
+        android:background="@color/accent_material_dark" />
+</LinearLayout>

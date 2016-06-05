@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stock"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vtrain_name"
+                android:hint="@string/train_name"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                android:padding="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vtrain_industry"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                android:padding="16dp"
+                android:hint="type of train"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vabout_train"
+                android:scrollbars="vertical"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                android:lineSpacingExtra="@dimen/activity_horizontal_margin"
+                android:hint=" about train"
+                android:padding="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vtrain_mobile"
+                android:hint="@string/mobile"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                android:padding="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vtrain_from"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                android:padding="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Vtrain_to"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                android:padding="16dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/enter_to_training"
+                android:layout_gravity="center"
+                android:text="enter to train"
+                android:padding="16dp"
+                android:background="@color/accent_material_dark" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".student.TrainingForEntry"
+    android:background="@drawable/stock"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:hint="your name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/academic_year"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:hint="your academic year" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:hint="your grade" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/experience"
+        android:hint="your experience"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm"
+        android:text="confirm"
+        android:layout_gravity="center"
+        android:background="@color/accent_material_dark" />
+    <RelativeLayout
+        android:id="@+id/loadingPanel_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

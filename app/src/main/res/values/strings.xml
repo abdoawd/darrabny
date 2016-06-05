@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Darabny</string>
+    <string name="name">enter your name</string>
+    <string name="phone">enter yor Telephone</string>
+    <string name="email"> enter your email</string>
+    <string name="pass">enter password</string>
+    <string name="industry"> industry</string>
+    <string name="mobile">your mobile</string>
+    <string name="submit">submit</string>
+    <string name="signup">signup</string>
+    <string name="login">login</string>
+    <string name="confirmPass">confirm password</string>
+    <string name="train_name">train name</string>
+    <string name="train_type">train type</string>
+    <string name="abuot_train">about train</string>
+    <string name="register"> submit </string>
+    <string-array name="training_types">
+        <item>android</item>
+        <item>Java</item>
+        <item>algorithm</item>
+        <item>c++</item>
+        <item>c</item>
+        <item>python</item>
+        <item>php</item>
+        <item>JavaScript and html and css</item>
+        <item>asp.net</item>
+    </string-array>
+</resources>

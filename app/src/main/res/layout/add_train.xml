@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/train_name"
+                android:hint="@string/train_name"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/train_industry"
+        />
+</LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_train"
+                android:hint="@string/abuot_train"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/train_mobile"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                android:hint="@string/mobile" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColorHint="@color/hintcolor"
+                android:textColor="@color/texttcolor"
+                android:text="start date"
+                android:id="@+id/training_from"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="end date"
+            android:ems="10"
+            android:textColorHint="@color/hintcolor"
+            android:textColor="@color/texttcolor"
+            android:id="@+id/training_to"
+            android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/train_confirm"
+        android:layout_gravity="center"
+        android:text="confirm"
+        android:background="@color/accent_material_dark" />
+    android:background="@color/accent_material_light" />
+    <RelativeLayout
+        android:id="@+id/loadingPanel_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

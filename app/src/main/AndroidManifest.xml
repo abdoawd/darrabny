@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nozom.darrabny">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.nozom.darrabny.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="com.nozom.darrabny.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".main.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/lancher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".company.Company_signup" />
+        <activity android:name=".student.Student_signup" />
+        <activity android:name=".company.Company_home_page"></activity>
+        <activity android:name=".student.Student_home_page" />
+        <activity android:name=".student.View_training" />
+        <activity android:name=".company.Acception_home" />
+        <activity android:name=".student.TrainingForEntry" />
+        <activity android:name=".company.RequestInformation" />
+        <receiver
+            android:name="com.backendless.push.BackendlessBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.nozom.darrabny" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".student.requestStatus"></activity>
+    </application>
+
+</manifest>

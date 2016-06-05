@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search by : "
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"
+        android:id="@+id/RB_group_search">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_search_name"
+            android:textColorHint="@color/hintcolor"
+            android:textColor="@color/texttcolor"
+            android:text="name   "
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="type"
+            android:textColorHint="@color/hintcolor"
+            android:textColor="@color/texttcolor"
+            android:id="@+id/radio_search_type" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textColorHint="@color/hintcolor"
+            android:textColor="@color/texttcolor"
+            android:text="you have to search with your choice "
+            android:textAppearance="?android:textAppearanceSmall" />
+    </RadioGroup>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_search"
+        android:visibility="gone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name  for search"
+        android:id="@+id/edit_search"
+        android:textColorHint="@color/hintcolor"
+        android:textColor="@color/texttcolor"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="search"
+        android:id="@+id/B_search"
+        android:background="@color/accent_material_light" />
+    <RelativeLayout
+        android:id="@+id/loadingPanel_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminate="true"
+        />
+</RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_search" />
+</LinearLayout>
